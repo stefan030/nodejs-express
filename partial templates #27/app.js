@@ -9,11 +9,11 @@ app.set('view engine', 'ejs');
 
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.render('index');
 });
 
 app.get('/contact', (req, res) => {
-    res.sendFile(__dirname + '/contact.html');
+    res.render('contact');
 });
 
 // Route params #22
