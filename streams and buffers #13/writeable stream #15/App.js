@@ -7,7 +7,7 @@ var fs = require('fs');
 * */
 
 var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf8'); // Which file to read through the stream
-var myWriteStream = fs.createWriteStream(__dirname + '/writeMe.txt', 'utf8');
+var myWriteStream = fs.createWriteStream(__dirname + '/writeMe.txt', 'utf8'); // Path to the file where we write data from readable stream
 
 // Each time we send a "chunk" of data, this function will run. We can use this for writing stream and to send out chunks of data so our client doesn't have to wait till the video is fully loaded
 // Check writeable stream #15 for more
